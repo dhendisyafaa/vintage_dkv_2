@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lily+Script+One&family=Rubik:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    scroll-behavior: smooth
+  }
+}
+
+@layer components {
+  .column {
+    @apply flex flex-col;
+  }
+
+  .column-center {
+    @apply flex flex-col items-center;
+  }
+
+  .header-img {
+    @apply w-2/5;
+  }
+
+  .layout {
+    @apply max-w-2xl w-full column gap-14 py-10 px-6;
+  }
+
+  .img-container {
+    @apply rounded-xl h-32 w-full relative;
+  }
+
+  .img-hero {
+    @apply w-full h-full object-cover rounded-lg;
+  }
+
+  /* card */
+  .card-96 {
+    @apply rounded-xl relative overflow-hidden column items-center p-3 w-64 h-[471px] bg-[#FADAC1] shadow-lg justify-between transition-all duration-700;
+  }
+
+  .card-96-img {
+    @apply h-52 w-full object-cover rounded-2xl;
+  }
+
+  .card-title {
+    @apply text-2xl font-rubik text-red;
+  }
+
+  .card-desc {
+    @apply text-dark-brown text-base font-inter;
+  }
+
+  .card-shade {
+    @apply bg-slate-600/20 absolute inset-0 p-5 flex items-end;
+  }
+
+  .button-card {
+    @apply w-full mt-3 p-3 bg-red rounded-xl text-sm gap-2 text-white;
+  }
+
+  .menu-btn {
+    @apply font-inter bg-slate-100 px-3 py-2 font-semibold text-xl;
+  }
+
+  .menu-show {
+    @apply menu-btn flex items-center justify-center gap-2 w-1/2 bg-red text-red;
+  }
+
+  .menu-hide {
+    @apply menu-btn flex items-center justify-center gap-2 bg-white w-1/2 text-red;
+  }
+
+  .text-muted {
+    @apply text-slate-600/60 font-semibold text-sm;
+  }
+
+  .hero-menu-btn {
+    @apply bg-white flex gap-2 items-center rounded-lg px-3 py-2 scroll-smooth
+  }
+
+  .text-btn {
+    @apply font-lora text-slate-950 font-extrabold text-lg
+  }
+
+  .btn-container {
+    @apply flex items-center rounded-full w-full
+  }
+
+  .rubik-bold {
+    @apply font-rubik font-extrabold text-slate-950 text-4xl text-center
+  }
+}
