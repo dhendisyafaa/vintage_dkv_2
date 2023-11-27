@@ -83,7 +83,6 @@ const Vintage = () => {
       </div>
       <Layout className="bg-dark-blue bg-no-repeat bg-cover bg-patern-1">
         <div className="column-center w-full gap-10">
-          <img src="/svg/collabLogo.svg" alt="" className="header-img" />
           <h1 className="font-rubik text-4xl text-center w-5/6 text-white text-shadow">
             Yuk Kepoin Menu Bazzar dari{" "}
             <span className="font-lily text-yellow-mencret">DKV 2</span>!
